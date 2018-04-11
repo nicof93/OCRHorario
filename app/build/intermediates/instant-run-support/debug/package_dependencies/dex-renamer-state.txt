@@ -1,0 +1,4 @@
+#Wed Apr 11 11:44:10 CLT 2018
+base.0=C\:\\Users\\Desarollo\\Desktop\\ReactJS\\Example-CloudVision\\CloudVision\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\30
+renamed.0=classes.dex
+file.0=C\:\\Users\\Desarollo\\Desktop\\ReactJS\\Example-CloudVision\\CloudVision\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\30\\classes.dex

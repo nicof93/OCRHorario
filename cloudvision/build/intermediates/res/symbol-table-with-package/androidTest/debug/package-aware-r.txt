@@ -1,0 +1,3 @@
+com.akexorcist.cloudvision.test
+int string app_name 0x7f010000
+int string score 0x7f010001
