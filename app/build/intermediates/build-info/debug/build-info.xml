@@ -2,13 +2,13 @@
 <instant-run
     abi="x86"
     api-level="23"
-    build-mode="COLD"
+    build-mode="FULL"
     density="xxhdpi"
     format="10"
     plugin-version="3.0.0"
-    timestamp="1523455255565"
-    token="6462762213676881691"
-    verifier="COLD_SWAP_REQUESTED" >
+    timestamp="1528497606215"
+    token="-8268174622833858141"
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
@@ -18,81 +18,88 @@
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="1162" />
     <task
         name="verifier"
         duration="0" />
 
     <artifact
-        location="C:\Users\Desarollo\Desktop\ReactJS\Example-CloudVision\CloudVision\app\build\outputs\apk\debug\app-debug.apk"
+        location="C:\Users\Desarollo\Desktop\OCRHorario\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Desarollo\Desktop\OCRHorario\app\build\outputs\apk\debug\app-debug.apk"
         type="SPLIT_MAIN" />
+    <artifact
+        location="C:\Users\Desarollo\Desktop\OCRHorario\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Desarollo\Desktop\OCRHorario\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Desarollo\Desktop\OCRHorario\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Desarollo\Desktop\OCRHorario\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Desarollo\Desktop\OCRHorario\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Desarollo\Desktop\OCRHorario\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Desarollo\Desktop\OCRHorario\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Desarollo\Desktop\OCRHorario\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Desarollo\Desktop\OCRHorario\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Desarollo\Desktop\OCRHorario\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1523452730859"
+        timestamp="1528497606215"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\Desarollo\Desktop\ReactJS\Example-CloudVision\CloudVision\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            location="C:\Users\Desarollo\Desktop\OCRHorario\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\Desarollo\Desktop\ReactJS\Example-CloudVision\CloudVision\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Desarollo\Desktop\ReactJS\Example-CloudVision\CloudVision\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Desarollo\Desktop\ReactJS\Example-CloudVision\CloudVision\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Desarollo\Desktop\ReactJS\Example-CloudVision\CloudVision\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Desarollo\Desktop\ReactJS\Example-CloudVision\CloudVision\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Desarollo\Desktop\ReactJS\Example-CloudVision\CloudVision\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Desarollo\Desktop\ReactJS\Example-CloudVision\CloudVision\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Desarollo\Desktop\ReactJS\Example-CloudVision\CloudVision\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Desarollo\Desktop\ReactJS\Example-CloudVision\CloudVision\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Desarollo\Desktop\ReactJS\Example-CloudVision\CloudVision\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Desarollo\Desktop\ReactJS\Example-CloudVision\CloudVision\app\build\outputs\apk\debug\app-debug.apk"
+            location="C:\Users\Desarollo\Desktop\OCRHorario\app\build\outputs\apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="FIELD_ADDED"
-        timestamp="1523454182624"
-        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="C:\Users\Desarollo\Desktop\ReactJS\Example-CloudVision\CloudVision\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="C:\Users\Desarollo\Desktop\OCRHorario\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="R_CLASS_CHANGE"
-        timestamp="1523454889972"
-        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="C:\Users\Desarollo\Desktop\ReactJS\Example-CloudVision\CloudVision\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            location="C:\Users\Desarollo\Desktop\OCRHorario\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1523455255565"
-        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="C:\Users\Desarollo\Desktop\ReactJS\Example-CloudVision\CloudVision\app\build\outputs\apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
+            location="C:\Users\Desarollo\Desktop\OCRHorario\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Desarollo\Desktop\OCRHorario\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Desarollo\Desktop\OCRHorario\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Desarollo\Desktop\OCRHorario\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Desarollo\Desktop\OCRHorario\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Desarollo\Desktop\OCRHorario\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Desarollo\Desktop\OCRHorario\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Desarollo\Desktop\OCRHorario\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
     </build>
 
 </instant-run>

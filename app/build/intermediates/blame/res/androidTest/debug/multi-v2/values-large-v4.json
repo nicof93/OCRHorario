@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Desarollo\\Desktop\\ReactJS\\Example-CloudVision\\CloudVision\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
+            "outputFile": "C:\\Users\\Desarollo\\Desktop\\OCRHorario\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Desarollo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.1.1.aar\\41f428cdea7c6282c9cfc6e3fb10964e\\res\\values-large\\values-large.xml",

@@ -16,6 +16,8 @@ package com.akexorcist.cvsample;
 
 import android.Manifest;
 import android.app.Activity;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.ContentResolver;
@@ -33,6 +35,7 @@ import android.net.Uri;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -61,6 +64,7 @@ import okhttp3.Headers;
 public class MainActivity extends AppCompatActivity implements CloudVision.Callback {
     private final static String apiKey = "AIzaSyBIiNrqWaxjZJwub6JHxvmxMYhfbZc7_qM";
 
+    public final static String APPLICATION_TAG_ERROR = "STRAWBERRY_ERROR";
     private ImageView imageContainer;
     private TextView txtTextDetected;
     private ListView lvLabel;
@@ -74,19 +78,24 @@ public class MainActivity extends AppCompatActivity implements CloudVision.Callb
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        imageContainer = (ImageView) findViewById(R.id.image_container);
-        txtTextDetected = (TextView) findViewById(R.id.textDetected);
-        lvLabel = (ListView) findViewById(R.id.lv_label);
-        pbLabel = (ProgressBar) findViewById(R.id.pb_label);
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment_container, HomeFragment.newInstance())
+                .attach(HomeFragment.newInstance())
+                .commit();
 
-        txtTextDetected.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View v) {
-                saveToClipboard("OCR", txtTextDetected.getText().toString());
-                return true;
-            }
-        });
-
+//        imageContainer = (ImageView) findViewById(R.id.image_container);
+//        txtTextDetected = (TextView) findViewById(R.id.textDetected);
+//        lvLabel = (ListView) findViewById(R.id.lv_label);
+//        pbLabel = (ProgressBar) findViewById(R.id.pb_label);
+//
+//        txtTextDetected.setOnLongClickListener(new View.OnLongClickListener() {
+//            @Override
+//            public boolean onLongClick(View v) {
+//                saveToClipboard("OCR", txtTextDetected.getText().toString());
+//                return true;
+//            }
+//        });
+//
         this.getPermission();
         takePhoto();
     }
@@ -357,10 +366,14 @@ public class MainActivity extends AppCompatActivity implements CloudVision.Callb
     }
 
     private void getPermission() {
+        if ( ContextCompat.checkSelfPermission( this, Manifest.permission.CAMERA ) != PackageManager.PERMISSION_GRANTED ) {
+            ActivityCompat.requestPermissions( this, new String[] {  Manifest.permission.CAMERA  },2);
+        }
+
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
             if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
             } else {
-                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE,}, 1);
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE,Manifest.permission.CAMERA}, 1);
             }
         }
     }

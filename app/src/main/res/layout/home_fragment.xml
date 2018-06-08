@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F2F7"
+    android:orientation="vertical"
+    android:layout_weight="6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/image_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:padding="10dp"
+            android:src="@mipmap/jager" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape"
+            android:padding="10dp">
+            <!--num user-->
+            <TextView
+                android:id="@+id/lblUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Num.Usr.:"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txtHora"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/txtHora"
+                android:text="018616829" />
+
+            <!--hora-->
+            <TextView
+                android:id="@+id/lblHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblUser"
+                android:textStyle="bold"
+                android:text="Hora:"/>
+
+            <TextView
+                android:id="@+id/txtHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txtNombre"
+                android:layout_alignStart="@+id/txtNombre"
+                android:layout_below="@+id/txtUser"
+                android:text="18-06-08 14:16:39" />
+
+            <!--nombre-->
+            <TextView
+                android:id="@+id/lblNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_below="@+id/lblHora"
+                android:text="Nombre:"/>
+
+            <TextView
+                android:id="@+id/txtNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtHora"
+                android:layout_marginLeft="66dp"
+                android:layout_marginStart="66dp"
+                android:layout_toEndOf="@+id/lblUser"
+                android:layout_toRightOf="@+id/lblUser"
+                android:text="Nicolas" />
+
+            <TextView
+                android:id="@+id/txtScanned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:text=""/>
+
+            <ImageView
+                android:id="@+id/btnCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:src="@mipmap/check" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2.5"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/btnFiles"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:src="@mipmap/files_red"
+            />
+
+        <ImageButton
+            android:id="@+id/btnUsers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:src="@mipmap/users"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/btnCamara"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:src="@mipmap/camara"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>
